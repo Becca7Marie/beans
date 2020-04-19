@@ -109,15 +109,48 @@ body {
   height: 100%;
 }
 
+header,
+footer {
+  background-color: green;
+  height: 80px;
+  width: 100%;
+  color: #fff;
+  margin: 10px 0 10px 0;
+}
+
+header {
+  font-size: 2em;
+}
+
+main {
+  background-color: #ccc;
+  height: 250px;
+  width: 100%;
+  color: white;
+  background: green;
+  font-size: 1.5em;
+  
+}
+
+footer {
+  font-size: 1em;
+}
+
+header, 
+footer,
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .wrapper {
   /*add display:flex and set justify-content to space-between*/
-  font-weight: 700;
+  
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-flow: wrap;
-  border-top: 1px solid #ccc;
-  border-bottom: 1px solid #ccc;
+  flex-flow: row wrap;
 }
 
 .div-1, .div-2, .div-3 {
